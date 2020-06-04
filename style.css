@@ -1,0 +1,129 @@
+/* CSS Resets */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+/* root styles */
+:root{
+    --primary_color: #000000;
+    --secondary_color: #ffffff;
+}
+
+/* base styles */
+body{
+    text-align: center;
+    font-family: 'Lato', sans-serif;;
+}
+
+/* main body section */
+
+.main_container{
+    width: 95%;
+    max-width: 768px;
+    margin: 15vh auto;
+}
+
+/* timer section*/
+
+.timer{
+    font-size: 7rem;
+    color: var(--primary_color);
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 768px){
+    .timer{
+        font-size: 11rem;
+    }
+}
+
+/* buttons section */
+
+.button_container{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.timer_button{
+    font-size: 3rem;
+    color: var(--primary_color);
+    opacity: 0.7;
+}
+
+.timer_button:hover{
+    opacity: 1;
+}
+
+.button_container .fa-play{
+    grid-column: 1/2;
+}
+
+
+.button_container .fa-pause{
+    grid-column: 1/2;
+    display: none;
+}
+
+
+.button_container .fa-coffee{
+    grid-column: 2/3;
+}
+
+.button_container .fa-clock{
+    grid-column: 2/3;
+    display: none;
+}
+
+
+
+
+.button_container .fa-redo{
+    grid-column: 3/4;
+}
+
+
+
+/* Audio player */
+
+.audio_container{
+    background-color: var(--primary_color);
+    color: var(--secondary_color);
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* audio controls */
+
+.audio_controls{
+    display: flex;
+    margin: 0 auto;
+    width: 25%;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.audio_button{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#pause_button{
+    display: none;
+}
+
+/* track info */
+
+.title{
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1rem;
+}
+
+

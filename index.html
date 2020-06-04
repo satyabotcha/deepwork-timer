@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Work Timer</title>
+    <script src="https://kit.fontawesome.com/47d4936cda.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js"></script>
+    <script defer src="/script.js"></script>
+    <script defer src="/audio.js"></script>
+</head>
+<body>
+    <div class="main_container">
+
+        <div class="timer_container">
+            <h1 class="timer" id="timer"></h1>
+        </div>
+
+        <div class="button_container">
+            <i class="timer_button fas fa-play" id="start"></i>
+            <i class="timer_button fas fa-pause" id="pause"></i>
+            <i class="timer_button fas fa-coffee" id="break_session"></i>
+            <i class="timer_button fas fa-clock" id="focus_session"></i>
+            <i class="timer_button fas fa-redo" id="reset"></i>
+        </div>
+
+    </div>  
+
+    <div class="audio_container">
+
+        <!-- controls -->
+
+        <div class="audio_controls">
+            <div class="audio_button fas fa-step-backward" id="prev_button"></div>
+            <div class="audio_button fas fa-play" id="play_button"></div>
+            <div class="audio_button fas fa-pause" id="pause_button"></div>
+            <div class="audio_button fas fa-step-forward" id="next_button"></div>
+        </div>
+        
+
+        <!-- track info -->
+
+        <div class="title">
+            <div class="track_name" id="track_name"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
